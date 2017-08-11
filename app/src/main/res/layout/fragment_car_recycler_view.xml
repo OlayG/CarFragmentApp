@@ -8,7 +8,38 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <LinearLayout
+            android:id="@+id/llViews"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnGridView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="changeLayout"
+                android:text="Grid"/>
+
+            <Button
+                android:id="@+id/btnListView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="changeLayout"
+                android:text="Vertical"/>
+
+            <Button
+                android:id="@+id/btnListHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="changeLayout"
+                android:text="Horizontal"/>
+
+        </LinearLayout>
+
         <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/llViews"
             android:id="@+id/rvCarList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
