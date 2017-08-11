@@ -3,7 +3,7 @@ package com.example.admin.carfragmentapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity implements AddNewCarFragment.OnFragmentInteractionListener{
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,8 +17,4 @@ public class MainActivity extends AppCompatActivity implements AddNewCarFragment
         getSupportFragmentManager().beginTransaction().replace(R.id.flFrame2, carList, "MainActivity").commit();
     }
 
-    @Override
-    public void onFragmentInteraction(Car car) {
-
-    }
 }

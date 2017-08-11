@@ -55,7 +55,7 @@ public class CarRecyclerViewFragment extends Fragment {
         itemAnimator = new DefaultItemAnimator();
         rvCarList.setLayoutManager(layoutManager);
         rvCarList.setItemAnimator(itemAnimator);
-
+        layoutManager.
         DatabaseHelper db = new DatabaseHelper(view.getContext());
         carList = db.getCars();
         carListAdapter = new CarListAdapter(carList);
